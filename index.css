@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased selection:bg-indigo-500/20 selection:text-indigo-900;
+  }
+}
+
+/* Chat Markdown styling */
+.prose-chat {
+  font-size: 0.95rem;
+  line-height: 1.68;
+}
+
+.prose-chat h1, .prose-chat h2, .prose-chat h3, .prose-chat h4 {
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-chat h1 { font-size: 1.35rem; }
+.prose-chat h2 { font-size: 1.2rem; }
+.prose-chat h3 { font-size: 1.05rem; }
+
+.prose-chat p {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.prose-chat ul {
+  list-style-type: disc;
+  padding-left: 1.4rem;
+  margin: 0.5rem 0;
+}
+
+.prose-chat ol {
+  list-style-type: decimal;
+  padding-left: 1.4rem;
+  margin: 0.5rem 0;
+}
+
+.prose-chat li {
+  margin: 0.2rem 0;
+}
+
+.prose-chat blockquote {
+  border-left: 3px solid #6366f1;
+  padding-left: 0.9rem;
+  font-style: italic;
+  color: #64748b;
+  margin: 0.6rem 0;
+}
+
+.prose-chat code:not(pre code) {
+  background-color: rgba(99, 102, 241, 0.1);
+  color: #4338ca;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.35rem;
+  font-size: 0.88em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.dark .prose-chat code:not(pre code) {
+  background-color: rgba(99, 102, 241, 0.2);
+  color: #a5b4fc;
+}
+
+.prose-chat table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+  font-size: 0.9rem;
+}
+
+.prose-chat th, .prose-chat td {
+  border: 1px solid #e2e8f0;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.dark .prose-chat th, .dark .prose-chat td {
+  border-color: #334155;
+}
+
+.prose-chat th {
+  background-color: #f8fafc;
+  font-weight: 600;
+}
+
+.dark .prose-chat th {
+  background-color: #1e293b;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}
