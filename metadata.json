@@ -1,0 +1,6 @@
+{
+  "name": "Shah Lalji AI",
+  "description": "A smart, friendly, fast, and helpful general-purpose AI assistant for school subjects, homework, coding, writing, mathematics, and problem solving.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
